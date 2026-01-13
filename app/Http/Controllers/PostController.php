@@ -66,7 +66,7 @@ class PostController extends Controller
         $post->update($data);
         return redirect()->route('posts.index');
     }
-
+ 
     public function store(Request $request)
     {
         $data = $request->validate([
